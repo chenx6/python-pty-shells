@@ -20,3 +20,24 @@ Released under the WTFPL - wtfpl.net
 Project by Insecurety Research - insecurety.net
 
 Author: Darren 'infodox' Martyn.
+
+## Basic usage
+
+Server side:
+
+```bash
+# Change listen port
+$ python3 tcp_pty_bind.py
+# Or use reverse shell
+$ python3 tcp_pty_backconnect.py
+```
+
+Client side:
+
+```bash
+$ python3 tcp_pty_shell_handler.py -c $ADDR
+```
+
+## Update log
+
+- 2022-04-08 Add Python3 support
